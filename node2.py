@@ -22,6 +22,6 @@ def timerCallBack(event):
     pub.publish(msg)
 
 pub = rospy.Publisher('/topic2', String, queue_size=1)
-timer = rospy.Timer(rospy.Duration(0.1), timerCallBack)
+timer = rospy.Timer(rospy.Duration(1), timerCallBack)
 
 rospy.spin()
