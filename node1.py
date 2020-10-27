@@ -18,7 +18,7 @@ def timerCallBack(event):
 
 
 pub = rospy.Publisher('/topic1', String, queue_size=1)
-timer = rospy.Timer(rospy.Duration(0.1), timerCallBack)
+timer = rospy.Timer(rospy.Duration(1), timerCallBack)
 sub = rospy.Subscriber('/topic2', String, recebe_volta)
 
 rospy.spin()
